@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- HEAR SECTION -->
+    <header class="headerTop overlay has-bg-img rounded h-10rem" id="overlay">
+      <nav
+        class="nav fixed-top justify-content-end navbar-light bg-light text-dark navbar-expand-md"
+      >
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a
+            class="nav-link text-light me-auto border bg-info"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="nav-link text-dark active"
+            aria-current="page"
+            href="#aboutme"
+            >About</a
+          >
+          <a class="nav-link text-dark" href="#portfolio">Portfolio</a>
+          <a class="nav-link text-dark" href="#blog">Blog</a>
+          <a class="nav-link text-dark" href="#team" tabindex="-1">Team</a>
+          <a class="nav-link text-dark" href="#contact">Contact</a>
+        </div>
+        <button
+          class="navbar-toggler bg-info"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <!-- <img src="./images/headerback.jpg" class="img-fluid" alt="Header image" /> -->
+      <div
+        class="welcome container position-absolute top-50 start-50 translate-middle w-50"
+      >
+        <h1 class="fw-900 text-info">Take a tour into my portfolio!</h1>
+        <p class="text-secondary"></p>
+        <!--<button class="btn btn-info">See more</button>-->
+      </div>
+    </header>
+    <!-- HEAR SECTION -->
+
+    <!-- ABOUT SECTION WITH TEXT AND PICTURE -->
+    <section class="py-5 bg-dark" id="aboutme">
+      <div class="container w-75">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
+          <div class="col col-md-8">
+            <h3 class="h3 mb-3 fw-normal text-info">About me</h3>
+
+            <p
+              class="text-white fw-lighter lead border-info border-3 border-start ps-3"
+            >
+              My name is <span class="fw-bold text-white">Gerald Berrebi</span>,
+              I just graduated in full stack developer bootcamp in Python at
+              Developers Institute. Passionate about science and technology with
+              eager to constantly learn, I have knowledge of large international
+              groups and small structures. while aiming excellence, I tackle
+              with humility and integrity all challenges that I will have to
+              face.
+            </p>
+            <!-- <h4 class="text-white fw-lighter">Gerald Berrebi</h4> -->
+          </div>
+          <div class="col col-md-4">
+            <img
+              src="./images/GeraldBerrebi_Photo_square.png"
+              alt="avatar"
+              class="border border-info border-3 rounded-circle mt-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION WITH TEXT AND PICTURE -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="album py-5 bg-dark" id="portfolio">
+      <div class="container w-75">
+        <h3 class="text-info">Portfolio</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/portfolio/portofolio_supervisors.png"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">SuperVisors</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button>
+                  </div>
+                  <small class="text-muted">August 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/portfolio/portfolio_skola.png"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <p class="card-text">SkolaBoard</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#skolaboardModal"
+                    >
+                      View
+                    </button>
+                  </div>
+                  <small class="text-muted">July 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/portfolio/portfolio_cryptocurrencies.png"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <p class="card-text">Crypto Currencies</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      View
+                    </button>
+                  </div>
+                  <small class="text-muted">June 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/portfolio/portfoilio_levelup.png"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <p class="card-text">Level Up & Go</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#levelUpModal"
+                    >
+                      View
+                    </button>
+                  </div>
+                  <small class="text-muted">April 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO SECTION -->
+
+    <!-- BLOG SECTION -->
+    <section class="album py-5 bg-dark" id="blog">
+      <div class="container w-75">
+        <h3 class="text-info">Blog</h3>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/blog/imag2.jpg"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Menu Burger.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View details &raquo;
+                    </button>
+                  </div>
+                  <small class="text-muted">March 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/blog/images.jpg"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <p class="card-text">The Wild & Wacky.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View details &raquo;
+                    </button>
+                  </div>
+                  <small class="text-muted">March 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/blog/polit.jpg"
+                class="img img-thumbnail rounded"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <p class="card-text">Startup AirBnb.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View details &raquo;
+                    </button>
+                  </div>
+                  <small class="text-muted">March 2022</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BLOG SECTION -->
+
+    <!-- TEAM  SECTION -->
+    <section class="py-5 bg-dark" id="team">
+      <div class="container w-75">
+        <h3 class="text-info">Our Team</h3>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"
+        >
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/face3.jpg"
+                class="img img-fluid rounded"
+                alt="..."
+              />
+              <div class="card-body bg-info py-0">
+                <p class="card-text mb-0 fs-6 fw-lighter">Erwin Mac Namara</p>
+                <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                <small class="text-muted mt-0">UX Designer</small>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/face1.jpg"
+                class="img img-fluid rounded"
+                alt="..."
+              />
+              <div class="card-body bg-info py-0">
+                <p class="card-text fs-6 fw-lighter mb-0">John Doe</p>
+                <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                <small class="text-muted mt-0">Frontend developer</small>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/face2.jpg"
+                class="img img-fluid rounded"
+                alt="..."
+              />
+              <div class="card-body bg-info py-0">
+                <p class="card-text fs-6 fw-lighter mb-0">Barbara Smith</p>
+                <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                <small class="text-muted mt-0">Fullstack developer</small>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img
+                src="./images/face1.jpg"
+                class="img img-fluid rounded"
+                alt="..."
+              />
+              <div class="card-body bg-info py-0">
+                <p class="card-text fs-6 fw-lighter mb-0">William Donovan</p>
+                <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                <small class="text-muted mt-0">CEO</small>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col">
+            <figure class="figure">
+              <img
+                src="./images/face2.jpg"
+                class="figure-img img-fluid rounded"
+                alt="..."
+              />
+              <figcaption class="figure-caption">
+                Fullstack developer.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="./images/face1.jpg"
+                class="figure-img img-fluid rounded"
+                alt="..."
+              />
+              <figcaption class="figure-caption">UX designer.</figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="./images/face3.jpg"
+                class="figure-img img-fluid rounded"
+                alt="..."
+              />
+              <figcaption class="figure-caption bg-info">
+                Frontend developer.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="./images/face1.jpg"
+                class="figure-img img-fluid rounded"
+                alt="..."
+              />
+              <figcaption class="figure-caption">
+                Frontend developer.
+              </figcaption>
+            </figure>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- TEAM  SECTION -->
+
+    <!-- CONTACT SECTION -->
+    <section class="form-signin py-5 bg-dark" id="contact">
+      <div class="container w-75">
+        <div
+          class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-md-2 g-3"
+        >
+          <div class="col col-md-4">
+            <h3 class="h3 mb-3 fw-normal text-info">Get in Touch</h3>
+            <div class="icons d-flex">
+              <i class="bi bi-linkedin fa-2x me-3 text-info"></i>
+              <i class="bi bi-facebook fa-2x me-3 text-primary"></i>
+              <i class="bi bi-github fa-2x me-3 text-light"></i>
+              <!-- <i class="fa-brands fa-linkedin-in fa-2x me-3 text-info"></i>
+              <i class="fa-brands fa-facebook fa-2x me-3 text-primary"></i>
+              <i class="fa-brands fa-github fa-2x me-3 text-secondary"></i> -->
+            </div>
+          </div>
+          <div class="col col-md-8">
+            <form action="https://formspree.io/f/xpznzwgl" method="POST">
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control mb-3"
+                  id="floatingInput"
+                  name="Name"
+                  placeholder="Your name"
+                  required
+                />
+                <label for="floatingInput">Your name</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="email"
+                  class="form-control mb-3"
+                  id="floatingEmail"
+                  name="Email"
+                  placeholder="Your email"
+                  required
+                />
+                <label for="floatingInput">Your email address</label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  type="text"
+                  class="form-control mb-3"
+                  id="floatingMessage"
+                  name="Message"
+                  placeholder="Your message"
+                ></textarea>
+                <label for="floatingInput">Type your message</label>
+              </div>           
+
+              <button
+                class="w-100 btn btn-lg btn-info text-light"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <!-- Modal Skola Board-->
+  <div
+    class="modal fade"
+    id="skolaboardModal"
+    tabindex="-1"
+    aria-labelledby="skolaboardModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="skolaboardLabel">SkolaBoard</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div style="position: relative; padding-bottom: 62.5%; height: 0">
+            <iframe
+              src="https://www.loom.com/embed/f6db3f04138444f7a8f30fba403b5639"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal LevelUp and Go-->
+  <div
+    class="modal fade"
+    id="levelUpModal"
+    tabindex="-1"
+    aria-labelledby="levelUpModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="levelUpModalLabel">Level Up & Go</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0">
+            <iframe
+              src="https://www.loom.com/embed/27935ff8c8844d4d951bbd563ca49bb4"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal CryptoCurrencies-->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div
+            style="
+              position: relative;
+              padding-bottom: 50.208333333333336%;
+              height: 0;
+            "
+          >
+            <iframe
+              src="https://www.loom.com/embed/edee94ab750a4b048ed0d5028b537b76"
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+            ></iframe>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
