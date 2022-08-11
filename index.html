@@ -123,6 +123,8 @@
                     <button
                       type="button"
                       class="btn btn-sm btn-outline-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#supervisorsModal"
                     >
                       View
                     </button>
@@ -488,6 +490,41 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
+    <!-- Modal Supervisors-->
+    <div
+    class="modal fade"
+    id="supervisorssModal"
+    tabindex="-1"
+    aria-labelledby="supervisorsModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="supervisorsLabel">SuperVisors</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div style="position: relative; padding-bottom: 60.86956521739131%; height: 0;"><iframe src="https://www.loom.com/embed/b69a9be739304bc0a04646c751c250c3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Modal Skola Board-->
   <div
